@@ -1,0 +1,256 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #000;
+}
+header{
+  position: fixed;
+}
+header, nav ul{
+  width: 100%;
+  padding: 10px 10px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header{
+  border-bottom: 1px solid seashell;
+}
+
+#logo, nav{
+  display: inline-flex;
+}
+
+nav ul{
+  margin: 0;
+}
+nav ul li a{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+   padding-left: 40px;
+   color: #fff;
+}
+
+
+/* main section */
+main{
+  width: 1600px;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+ main .main_content{
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.9);
+   color: #fff;
+   padding: 20px 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+ .main_content h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  padding: 0px 0px 10px 0px;
+ }
+ .main_content h4{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-align:center;
+ }
+
+  /* best section */
+
+  #best{
+    width: 1600px;
+    margin: 0px auto 90px auto;
+  }
+  .best_container{
+    width: 1400px;
+    margin:0  auto;
+    text-align: center;
+  }
+  .best-heading{
+    width: 100%;
+    height: auto;
+    margin: 90px 0px 60px 0px;
+    
+  }
+ 
+  .best_container h2{
+   font-family: 'Roboto', sans-serif;
+   font-weight: 800;
+   font-size: 45px;
+   color: #fff;
+   text-transform: capitalize;
+   padding-bottom: 30px;
+  }
+  .best_container h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+   }
+
+   #best .best_coffees{
+     width: 100%;
+     margin: 0;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     align-items: center;
+
+   }
+   #best .best_coffees .coffee{
+     width: 400px;
+     height: 300px;
+     margin: 50px;
+   }
+   #best .best_coffees .coffee img{
+     width: 100%;
+     display: block;
+     padding-bottom: 15px;
+   }
+   .coffee .img-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    color: #fff;
+    letter-spacing: 1px;
+   }
+
+
+   /* location section */
+   #location1{
+        width: 1600px;
+        height: 700px;
+        margin: 0 auto;
+        background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+   }
+   #location1 .location_container{
+     width: 100%;  
+     margin: 0;
+   }
+   .location_heading h2{
+     text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 80px 0px;
+   }
+
+   #location1 .locations{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+   #location1 .locations .location{
+     padding: 5px;
+     text-align:center;
+     width: 400px;
+     height: 400px;
+     background-color: #000;
+     margin: 20px;
+     color: #fff;
+   }
+   #location1 .locations .location h3,h4,#lazy h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size:40px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 20px 0px;
+   }
+   #location1 .locations .location h4{
+     font-size: 30px;
+   }
+  
+   /* lazy */
+
+   #lazy{
+     margin: 60px 0px 20px 0px;
+     width: 100%;
+     height: auto;
+     padding: 20px;
+     text-align: center;
+   }
+   #lazy h4, span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size:30px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+   }
+   footer{
+       background-color: honeydew;
+       height: 80px;
+       text-align: center;
+   }
+   footer span {
+     line-height: 80px;
+    color: #000;
+   }
+  
+
+ @media only screen and (max-width:1024px){
+   main{
+     width: 100%;
+   }
+
+   .main_content h4{
+    font-size: 25px;
+    letter-spacing: 1px;
+   }
+
+   /* best */
+
+   #best{
+     width: 100%;
+   }
+   .best_container{
+    width: 85%;
+    margin:0  auto;
+    text-align: center;
+  }
+  #best .best_coffees .coffee{
+    width: 600px;
+    height: 400px;
+    margin: 50px;
+  }
+  /* location */
+
+  #location1{
+    width: 100%;
+    height: auto;
+}
+nav ul li a{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  padding-left: 10px;
+}
+ }
+
